@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: #647761;
+    z-index: 10000;
+    position: absolute;
+    padding: 30px;
+    position: fixed;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Paytone One", serif;
+    
+}
+header a:hover{
+    color: black;
+    border-bottom: 5px dotted white;
+    transition: 0.4s;
+}
+header a:active{
+    border: 5px solid black;
+}
+.global{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.global video{
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(20%);
+    z-index: -100;
+    width: 100%;
+    position: absolute  ;
+}
+.global h1{
+    z-index: 100;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+    animation: anime 2s ease-in infinite;
+}
+@keyframes anime {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+#produits{
+    margin: 30px auto;
+    width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 60px 30px;
+}
+section h1{
+    text-align: center;
+    font-size: 40px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(40, 151, 40);
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.card1{
+    display: flex;
+    justify-content: space-around   ;
+}
+.card{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 27%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card p{
+    flex-wrap: wrap; 
+    line-height: 20px;
+    color: #647761;
+}
+.card h3{
+    text-decoration: underline;
+    color: black;
+}
+.card img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+.card a{
+    text-decoration: none;
+}
+.card:hover{
+   transform:translateY(-30px) scale(1.02);
+   transition: 0.5s ease-in-out;
+}
+#partenaires{
+    margin-top: 40px;
+}
+.slider{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.slides{
+    display: flex;
+    width: calc(1);
+    animation: glisse 60s infinite;
+}
+.slide{
+    float: right;
+}
+.slide img{
+    width: 200px;
+    height: 100px;
+    margin-right: 60px;
+}
+@keyframes glisse {
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(-200px);
+    }
+    20%{
+        transform: translateX(-400px);
+    }
+    30%{
+        transform: translateX(-600px);
+    }
+    40%{
+        transform: translateX(-800px);
+    }
+    50%{
+        transform: translateX(-1000px);
+    }
+    60%{
+        transform: translateX(-1200px);
+    }
+    70%{
+        transform: translateX(-1400px);
+    }
+    80%{
+        transform: translateX(-1600px);
+    }
+    90%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    
+}
+.fa-brands {
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.fa-x-twitter:hover{
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(1.3);
+    transition: 0.4s ease-in-out;
+}
+.fa-facebook:hover{
+    color: rgb(51, 51, 201);
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(1.3);
+    transition: 0.4s ease-in-out;
+}
+.fa-instagram:hover{
+    color: deeppink;
+    background-color: black;
+    border-radius: 20%;
+    transform: scale(1.3);
+    transition: 0.4s ease-in-out;
+}
+.fa-linkedin:hover{
+    color: rgb(51, 51, 201);
+    border-radius: 50%;
+    transform: scale(1.3);
+    transition: 0.4s ease-in-out;
+}
+footer p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.log2-foot{
+      margin: -80px 950px;
+
+}
+.log2-foot i{
+    margin-top: 20px;
+    font-size: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}

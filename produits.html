@@ -1,205 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>agriculture.net — Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
+        <a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i> agriculture.net</a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <nav>
-
             <ul>
-                <div class="logo">
-                    <img src="./images/logo/Agriculture-Logo-Design-Free-PSD-Download-scaled.jpg" alt="" width="200" height="100">
-                </div>
-                <li><a href="index.html">accueil</a></li>
-                <li><a href="#fruits">fruits et <br> légumes</a></li>
-                <li><a href="#engrais">engrais</a></li>
-                <li><a href="#tracteurs">tracteurs</a></li>
-                <li><a href="#contacts">contacts</a></li>
-                <li><a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                <li><a href="inscription.html"><i class="fa-solid fa-user"></i></a></li>
-                
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#fruits">Fruits et légumes</a></li>
+                <li><a href="#engrais">Engrais</a></li>
+                <li><a href="#tracteurs">Tracteurs</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="inscription.html" class="compte"><i class="fa-solid fa-user"></i> Compte</a></li>
             </ul>
         </nav>
     </header>
-    <div class="global">
+    <div class="global global-image">
         <img src="./images/global/pexels-dendoktoor-19486680.jpg" alt="">
-    </div>
-    <section id="fruits">
-            <h1>fruits et légumes</h1>
-            <div class="card1">
-               <div class="card">
-                  <img src="./images/fruits/images.jpg" alt="">
-                   <h3>oranges</h3>
-                   <p>Les oranges de chez moi sont comme des joyaux du soleil : éclatantes, parfumées et pleines de douceur.</p>
-                   <span>300<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-               </div>
-
-               <div class="card">
-                <img src="./images/fruits/Mangos_-_single_and_halved-removebg-preview.png" alt="">
-                 <h3>mangues</h3>
-                 <p>Laissez-vous séduire par nos mangues locales : exotiques, juteuses et d’une douceur incomparable, un voyage gustatif à chaque bouchée</p>
-                 <span>200<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-             </div>
-
-             <div class="card">
-                <img src="./images/fruits/pasteque.jpg" alt="">
-                 <h3>pastèques</h3>
-                 <p>Rafraîchissez-vous avec nos pastèques locales : généreuses, juteuses et naturellement sucrées, l’essence de l’été dans chaque tranche</p>
-                 <span>350<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-             </div>
-
-             <div class="card">
-                <img src="./images/fruits/tomate-coupe-removebg-preview.png" alt="">
-                 <h3>tomates</h3>
-                 <p>Offrez à vos recettes le goût authentique avec nos tomates locales : charnues, savoureuses et gorgées de soleil pour un plaisir 100% naturel</p>
-                 <span>400<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-             </div>
-
-             <div class="card">
-                <img src="./images/fruits/Fraise.png" alt="">
-                 <h3>fraises</h3>
-                 <p>Succombez à la gourmandise de nos fraises locales : juteuses, sucrées et cueillies avec soin pour un plaisir irrésistible</p>
-                 <span>150<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-             </div>
-             <div class="card">
-                <img src="./images/fruits/thinkstockphotos-480134211.webp" alt="">
-                 <h3>oignons</h3>
-                 <p>Rehaussez vos plats avec nos oignons locaux : savoureux, croquants et cultivés avec passion pour sublimer toutes vos recettes</p>
-                 <div>
-                    <span>250<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                 </div>
-             </div>
-
+        <div class="hero">
+            <span class="hero-tag"><i class="fa-solid fa-basket-shopping"></i> Boutique</span>
+            <h1>Nos produits</h1>
+            <p>Choisissez parmi nos fruits et légumes, engrais et tracteurs.</p>
+            <div class="filtres">
+                <a href="#fruits">Fruits et légumes</a>
+                <a href="#engrais">Engrais</a>
+                <a href="#tracteurs">Tracteurs</a>
             </div>
-    </section>
-    <section id="engrais">
-        <h1>engrais </h1>
-        <div class="card1">
-            
-            <div class="card">
-                <img src="./images/engrais/fertiberia-que-hacemos-productos-industria-explosivos-civiles-NAT-LD72.webp" alt="">
-                 <h3>Nitrate d’ammonium</h3>
-                 <p>Boostez la croissance de vos cultures avec le nitrate d’ammonium : un apport rapide en azote pour des plantes vigoureuses et verdoyantes</p>
-                 <div>
-                    <span>8000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                 </div>
-             </div>
-             <div class="card">
-                <img src="./images/engrais/phospate-diammonique.jpg" alt="">
-                 <h3>Phosphate diammonique</h3>
-                 <p>Optimisez le développement de vos plantes avec le phosphate diammonique : une combinaison idéale d’azote et de phosphore pour des racines solides et une floraison abondante</p>
-                 <div>
-                    <span>6000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                 </div>
-             </div>
-             <div class="card">
-                <img src="./images/engrais/1-19.png" alt="">
-                 <h3>urée</h3>
-                 <p>Maximisez le rendement de vos cultures avec l’urée : un engrais azoté puissant pour une croissance rapide et un feuillage éclatant</p>
-                 <div>
-                    <span>6500<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                 </div>
-             </div>
-             <div class="card">
-                <img src="./images/engrais/sulfate-de-potassium.jpg" alt="">
-                 <h3>Sulfate de potassium </h3>
-                 <p>Améliorez la qualité et la résistance de vos fruits et légumes avec le sulfate de potassium : un engrais essentiel pour des récoltes savoureuses et robustes</p>
-                 <div>
-                    <span>7000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                 </div>
-             </div>
-             <div class="card">
-                <img src="./images/engrais/Triple-Super-Phos_1080x.webp" alt="">
-                 <h3>Superphosphate triple</h3>
-                 <p>Favorisez une floraison éclatante et une fructification généreuse avec le superphosphate triple : une source concentrée de phosphore pour des cultures en pleine santé</p>
-                 <div>
-                    <span>6000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                 </div>
-             </div>
-             <div class="card">
-                <img src="./images/engrais/3无标.mp4.webp" alt="">
-                 <h3>NPK</h3>
-                 <p>Optez pour la solution équilibrée avec l’engrais NPK : un trio gagnant pour des cultures saines, productives et pleines de vitalité</p>
-                 <div>
-                    <span>3500<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                 </div>
-             </div>
         </div>
+    </div>
 
-    </section>
-    <section id="tracteurs">
-                <h1>tracteur</h1>
-                <div class="card1">
-                    <div class="card">
-                        <img src="./images/tracteur/6m155_r2g069251_large_large_bf7697ef759d2370acd46e63753ad70a4716e07a.avif" alt="">
-                         <h3>John Deere 6155M </h3>
-                         <p>Puissance et fiabilité réunies avec le John Deere 6155M : un tracteur robuste, performant et prêt à relever tous vos défis agricoles</p>
-                         <div>
-                            <span>6000000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                         </div>
+    <section id="fruits" class="bloc">
+        <div class="section-titre">
+            <span>Frais et locaux</span>
+            <h2>Fruits et légumes</h2>
+        </div>
+        <div class="card1">
+            <article class="card">
+                <div class="card-img"><img src="./images/fruits/images.jpg" alt="Oranges"></div>
+                <div class="card-corps">
+                    <h3>Oranges</h3>
+                    <p>Les oranges de chez moi sont comme des joyaux du soleil : éclatantes, parfumées et pleines de douceur.</p>
+                    <div class="card-pied">
+                        <span class="prix">300 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
                     </div>
-                    <div class="card">
-                        <img src="./images/tracteur/tracteurs-4wd-mf-7719-s-massey-ferguson.jpg" alt="">
-                         <h3>Massey Ferguson 7719 S</h3>
-                         <p>Travaillez plus efficacement avec le Massey Ferguson 7719 S : un concentré de technologie et de puissance pour une productivité maximale sur le terrain </p>
-                         <div>
-                            <span>7000000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="./images/tracteur/tracteurs-traction-4-roues-t7-270-new-holland.jpg" alt="">
-                         <h3>New Holland T7.270</h3>
-                         <p>Confort, performance et polyvalence : le New Holland T7.270 est l’allié idéal pour tous vos travaux agricoles, quelle que soit la saison </p>
-                         <div>
-                            <span>6500000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="./images/tracteur/case-ih-afs-connect-magnum-340-0.webp" alt="">
-                         <h3>Case IH Magnum 340</h3>
-                         <p>Dominez les grands espaces avec le Case IH Magnum 340 : une machine puissante et fiable pour maximiser vos rendements sans compromis </p>
-                         <div>
-                            <span>8000000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="./images/tracteur/tracteurs-4wd-724-vario-profi-fendt.jpg" alt="">
-                         <h3>Fendt 724 Vario</h3>
-                         <p>Profitez de la précision allemande avec le Fendt 724 Vario : un tracteur intelligent et économique pour une agriculture moderne et rentable</p>
-                         <div>
-                            <span>4500000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="./images/tracteur/axion-800-image-01.jpg" alt="">
-                         <h3>Claas Axion 850</h3>
-                         <p>Alliez performance et innovation avec le Claas Axion 850 : un tracteur conçu pour offrir confort, efficacité et longévité sur le terrain</p>
-                         <div>
-                            <span>4500000<i class="fa-solid fa-franc-sign"></i> <a href="inscription.html"><button>acheter</button></span></a>
-                         </div>
-                    </div>
-                    
                 </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/fruits/Mangos_-_single_and_halved-removebg-preview.png" alt="Mangues" class="detoure"></div>
+                <div class="card-corps">
+                    <h3>Mangues</h3>
+                    <p>Laissez-vous séduire par nos mangues locales : exotiques, juteuses et d’une douceur incomparable, un voyage gustatif à chaque bouchée</p>
+                    <div class="card-pied">
+                        <span class="prix">200 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/fruits/pasteque.jpg" alt="Pastèques"></div>
+                <div class="card-corps">
+                    <h3>Pastèques</h3>
+                    <p>Rafraîchissez-vous avec nos pastèques locales : généreuses, juteuses et naturellement sucrées, l’essence de l’été dans chaque tranche</p>
+                    <div class="card-pied">
+                        <span class="prix">350 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/fruits/tomate-coupe-removebg-preview.png" alt="Tomates" class="detoure"></div>
+                <div class="card-corps">
+                    <h3>Tomates</h3>
+                    <p>Offrez à vos recettes le goût authentique avec nos tomates locales : charnues, savoureuses et gorgées de soleil pour un plaisir 100% naturel</p>
+                    <div class="card-pied">
+                        <span class="prix">400 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/fruits/Fraise.png" alt="Fraises" class="detoure"></div>
+                <div class="card-corps">
+                    <h3>Fraises</h3>
+                    <p>Succombez à la gourmandise de nos fraises locales : juteuses, sucrées et cueillies avec soin pour un plaisir irrésistible</p>
+                    <div class="card-pied">
+                        <span class="prix">150 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/fruits/thinkstockphotos-480134211.webp" alt="Oignons"></div>
+                <div class="card-corps">
+                    <h3>Oignons</h3>
+                    <p>Rehaussez vos plats avec nos oignons locaux : savoureux, croquants et cultivés avec passion pour sublimer toutes vos recettes</p>
+                    <div class="card-pied">
+                        <span class="prix">250 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
+
+    <section id="engrais" class="bloc bloc-teinte">
+        <div class="section-titre">
+            <span>Pour des sols riches</span>
+            <h2>Engrais</h2>
+        </div>
+        <div class="card1">
+            <article class="card">
+                <div class="card-img"><img src="./images/engrais/fertiberia-que-hacemos-productos-industria-explosivos-civiles-NAT-LD72.webp" alt="Nitrate d’ammonium"></div>
+                <div class="card-corps">
+                    <h3>Nitrate d’ammonium</h3>
+                    <p>Boostez la croissance de vos cultures avec le nitrate d’ammonium : un apport rapide en azote pour des plantes vigoureuses et verdoyantes</p>
+                    <div class="card-pied">
+                        <span class="prix">8 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/engrais/phospate-diammonique.jpg" alt="Phosphate diammonique"></div>
+                <div class="card-corps">
+                    <h3>Phosphate diammonique</h3>
+                    <p>Optimisez le développement de vos plantes avec le phosphate diammonique : une combinaison idéale d’azote et de phosphore pour des racines solides et une floraison abondante</p>
+                    <div class="card-pied">
+                        <span class="prix">6 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/engrais/1-19.png" alt="Urée" class="detoure"></div>
+                <div class="card-corps">
+                    <h3>Urée</h3>
+                    <p>Maximisez le rendement de vos cultures avec l’urée : un engrais azoté puissant pour une croissance rapide et un feuillage éclatant</p>
+                    <div class="card-pied">
+                        <span class="prix">6 500 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/engrais/sulfate-de-potassium.jpg" alt="Sulfate de potassium"></div>
+                <div class="card-corps">
+                    <h3>Sulfate de potassium</h3>
+                    <p>Améliorez la qualité et la résistance de vos fruits et légumes avec le sulfate de potassium : un engrais essentiel pour des récoltes savoureuses et robustes</p>
+                    <div class="card-pied">
+                        <span class="prix">7 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/engrais/Triple-Super-Phos_1080x.webp" alt="Superphosphate triple"></div>
+                <div class="card-corps">
+                    <h3>Superphosphate triple</h3>
+                    <p>Favorisez une floraison éclatante et une fructification généreuse avec le superphosphate triple : une source concentrée de phosphore pour des cultures en pleine santé</p>
+                    <div class="card-pied">
+                        <span class="prix">6 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/engrais/3无标.mp4.webp" alt="NPK"></div>
+                <div class="card-corps">
+                    <h3>NPK</h3>
+                    <p>Optez pour la solution équilibrée avec l’engrais NPK : un trio gagnant pour des cultures saines, productives et pleines de vitalité</p>
+                    <div class="card-pied">
+                        <span class="prix">3 500 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="tracteurs" class="bloc">
+        <div class="section-titre">
+            <span>Puissance et fiabilité</span>
+            <h2>Tracteurs</h2>
+        </div>
+        <div class="card1">
+            <article class="card">
+                <div class="card-img"><img src="./images/tracteur/6m155_r2g069251_large_large_bf7697ef759d2370acd46e63753ad70a4716e07a.avif" alt="John Deere 6155M"></div>
+                <div class="card-corps">
+                    <h3>John Deere 6155M</h3>
+                    <p>Puissance et fiabilité réunies avec le John Deere 6155M : un tracteur robuste, performant et prêt à relever tous vos défis agricoles</p>
+                    <div class="card-pied">
+                        <span class="prix">6 000 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/tracteur/tracteurs-4wd-mf-7719-s-massey-ferguson.jpg" alt="Massey Ferguson 7719 S"></div>
+                <div class="card-corps">
+                    <h3>Massey Ferguson 7719 S</h3>
+                    <p>Travaillez plus efficacement avec le Massey Ferguson 7719 S : un concentré de technologie et de puissance pour une productivité maximale sur le terrain</p>
+                    <div class="card-pied">
+                        <span class="prix">7 000 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/tracteur/tracteurs-traction-4-roues-t7-270-new-holland.jpg" alt="New Holland T7.270"></div>
+                <div class="card-corps">
+                    <h3>New Holland T7.270</h3>
+                    <p>Confort, performance et polyvalence : le New Holland T7.270 est l’allié idéal pour tous vos travaux agricoles, quelle que soit la saison</p>
+                    <div class="card-pied">
+                        <span class="prix">6 500 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/tracteur/case-ih-afs-connect-magnum-340-0.webp" alt="Case IH Magnum 340"></div>
+                <div class="card-corps">
+                    <h3>Case IH Magnum 340</h3>
+                    <p>Dominez les grands espaces avec le Case IH Magnum 340 : une machine puissante et fiable pour maximiser vos rendements sans compromis</p>
+                    <div class="card-pied">
+                        <span class="prix">8 000 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/tracteur/tracteurs-4wd-724-vario-profi-fendt.jpg" alt="Fendt 724 Vario"></div>
+                <div class="card-corps">
+                    <h3>Fendt 724 Vario</h3>
+                    <p>Profitez de la précision allemande avec le Fendt 724 Vario : un tracteur intelligent et économique pour une agriculture moderne et rentable</p>
+                    <div class="card-pied">
+                        <span class="prix">4 500 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="./images/tracteur/axion-800-image-01.jpg" alt="Claas Axion 850"></div>
+                <div class="card-corps">
+                    <h3>Claas Axion 850</h3>
+                    <p>Alliez performance et innovation avec le Claas Axion 850 : un tracteur conçu pour offrir confort, efficacité et longévité sur le terrain</p>
+                    <div class="card-pied">
+                        <span class="prix">4 500 000 FCFA</span>
+                        <a href="inscription.html" class="acheter">Acheter</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
     <footer id="contacts">
-        <p>nos réseaux sociaux:</p>
-        <div class="log-foot">
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+        <div class="foot-grille">
+            <div>
+                <a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i> agriculture.net</a>
+                <p class="foot-texte">Fruits, légumes, engrais et tracteurs pour une agriculture moderne.</p>
+                <p class="foot-sous-titre">Nos réseaux sociaux :</p>
+                <div class="log-foot">
+                    <a href="" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="log2-foot">
+                <p class="foot-sous-titre">Contacts</p>
+                <a href="tel:+2250700082080"><i class="fa-solid fa-phone"></i> +225 07 00 08 20 80</a>
+                <a href="tel:+2250544101222"><i class="fa-brands fa-whatsapp"></i> +225 05 44 10 12 22</a>
+                <a href="mailto:agriculture@gmail.com"><i class="fa-solid fa-envelope"></i> agriculture@gmail.com</a>
+            </div>
         </div>
-        <div class="log2-foot">
-           <a href="tel:+2250700082080"><i class="fa-solid fa-phone">+2250700082080 </i></a>
-           <a href="tel:+2250544101222"><i class="fa-brands fa-whatsapp">+2250544101222</i></a>
-          <a href="mailto:agriculture@gmail.com"> <i class="fa-solid fa-envelope">agriculture@gmail.com</i></a>
-            
-        </div>
+        <p class="copyright">© agriculture.net</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

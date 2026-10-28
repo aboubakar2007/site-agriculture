@@ -1,80 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>agriculture.net — Produits agricoles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i> agriculture.net</a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <nav>
             <ul>
-                <li><a href="index.html">accueil</a></li>
-                <li><a href="#produits">nos produits</a></li>
-                <li><a href="#partenaires">nos partenaires</a></li>
-                <li><a href="#contacts">contacts</a></li>
+                <li><a href="index.html" class="actif">Accueil</a></li>
+                <li><a href="#produits">Nos produits</a></li>
+                <li><a href="#partenaires">Nos partenaires</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="connexion.html" class="compte"><i class="fa-solid fa-user"></i> Compte</a></li>
             </ul>
         </nav>
     </header>
     <div class="global">
-        <video src="./images/vidéo/750511_Plants Gardening Greenhouse Watering_By_Polina_Borisova_Artlist_HD.mp4" muted="" autoplay="autoplay" loop="infinite"></video>
-        <h1>agriculture.net</h1>
-    </div>
-    <section id="produits">
-          <h1> nos produits</h1>
-          <div class="card1">
-                <div class="card">
-                    <a href="produits.html#fruits"><img src="./images/pexels-pixabay-264537.jpg">
-                    <h3>fruits et légumes</h3>
-                    <p>Nous cultivons des fruits et légumes avec soin, en respectant la nature. Nos produits sont frais, bons et pleins de saveurs. Chaque saison apporte de nouveaux délices : des tomates juteuses, des pommes croquantes, des carottes sucrées... </p></a>
-                </div>
-                <div class="card">
-                   <a href="produits.html#engrais"> <img src="./images/pexels-karolina-grabowska-4750385.jpg" width="350" height="263">
-                    <h3>engrais</h3>
-                    <p>Nos engrais nourrissent le sol et aident les plantes à bien pousser. Ils sont conçus pour apporter les bons éléments aux cultures, tout en respectant la nature. Avec un sol riche et en bonne santé, vos fruits et légumes seront encore plus beaux et savoureux </p></a>
-                </div>
-                <div class="card">
-                   <a href="produits.html#tracteurs"><img src="./images/pexels-jk04-2933243.jpg" alt="">
-                    <h3>tracteur</h3>
-                    <p>Nos tracteurs sont solides, puissants et faits pour vous aider à travailler plus facilement. Que ce soit pour labourer, semer ou récolter, ils vous accompagnent chaque jour avec performance et fiabilité.</p></a>
-                </div>
-          </div>
-    </section>
-    <section id="partenaires">
-           <h1>nos partenaires</h1>
-           <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="./images/partenaires/15936049081618410708.jpg" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/images.jpeg" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/images.png" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/logo-saco-320x200-1.jpg" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/logo_136.png" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/logo_7.jpg" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/olam_logo-1024x312.png" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/Palmci_logo.png" alt=""></div>
-                <div class="slide"><img src="./images/partenaires/unnamed.png" alt=""></div>
+        <video src="./images/vidéo/750511_Plants Gardening Greenhouse Watering_By_Polina_Borisova_Artlist_HD.mp4" poster="./images/global/pexels-dendoktoor-19486680.jpg" muted autoplay loop playsinline></video>
+        <div class="hero">
+            <span class="hero-tag"><i class="fa-solid fa-seedling"></i> Du champ à votre table</span>
+            <h1>agriculture.net</h1>
+            <p>Fruits et légumes frais, engrais de qualité et tracteurs performants : tout pour cultiver mieux.</p>
+            <div class="hero-boutons">
+                <a href="produits.html" class="btn btn-plein">Découvrir la boutique</a>
+                <a href="#produits" class="btn btn-contour">Nos produits</a>
             </div>
-           </div>
+        </div>
+    </div>
+
+    <section id="produits" class="bloc">
+        <div class="section-titre">
+            <span>Ce que nous proposons</span>
+            <h2>Nos produits</h2>
+        </div>
+        <div class="card1">
+            <a href="produits.html#fruits" class="card card-lien">
+                <div class="card-img"><img src="./images/pexels-pixabay-264537.jpg" alt="Fruits et légumes"></div>
+                <div class="card-corps">
+                    <h3>Fruits et légumes</h3>
+                    <p>Nous cultivons des fruits et légumes avec soin, en respectant la nature. Nos produits sont frais, bons et pleins de saveurs. Chaque saison apporte de nouveaux délices : des tomates juteuses, des pommes croquantes, des carottes sucrées...</p>
+                    <span class="voir">Voir les produits <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <a href="produits.html#engrais" class="card card-lien">
+                <div class="card-img"><img src="./images/pexels-karolina-grabowska-4750385.jpg" alt="Engrais"></div>
+                <div class="card-corps">
+                    <h3>Engrais</h3>
+                    <p>Nos engrais nourrissent le sol et aident les plantes à bien pousser. Ils sont conçus pour apporter les bons éléments aux cultures, tout en respectant la nature. Avec un sol riche et en bonne santé, vos fruits et légumes seront encore plus beaux et savoureux.</p>
+                    <span class="voir">Voir les produits <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <a href="produits.html#tracteurs" class="card card-lien">
+                <div class="card-img"><img src="./images/pexels-jk04-2933243.jpg" alt="Tracteurs"></div>
+                <div class="card-corps">
+                    <h3>Tracteurs</h3>
+                    <p>Nos tracteurs sont solides, puissants et faits pour vous aider à travailler plus facilement. Que ce soit pour labourer, semer ou récolter, ils vous accompagnent chaque jour avec performance et fiabilité.</p>
+                    <span class="voir">Voir les produits <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
     </section>
+
+    <section id="partenaires" class="bloc partenaires">
+        <div class="section-titre">
+            <span>Ils nous font confiance</span>
+            <h2>Nos partenaires</h2>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="./images/partenaires/15936049081618410708.jpg" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/images.jpeg" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/images.png" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/logo-saco-320x200-1.jpg" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/logo_136.png" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/logo_7.jpg" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/olam_logo-1024x312.png" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/Palmci_logo.png" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/unnamed.png" alt="Logo partenaire"></div>
+                <div class="slide"><img src="./images/partenaires/15936049081618410708.jpg" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/images.jpeg" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/images.png" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/logo-saco-320x200-1.jpg" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/logo_136.png" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/logo_7.jpg" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/olam_logo-1024x312.png" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/Palmci_logo.png" alt="Logo partenaire" aria-hidden="true"></div>
+                <div class="slide"><img src="./images/partenaires/unnamed.png" alt="Logo partenaire" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
     <footer id="contacts">
-        <p>nos réseaux sociaux:</p>
-        <div class="log-foot">
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+        <div class="foot-grille">
+            <div>
+                <a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i> agriculture.net</a>
+                <p class="foot-texte">Fruits, légumes, engrais et tracteurs pour une agriculture moderne.</p>
+                <p class="foot-sous-titre">Nos réseaux sociaux :</p>
+                <div class="log-foot">
+                    <a href="" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="log2-foot">
+                <p class="foot-sous-titre">Contacts</p>
+                <a href="tel:+2250700082080"><i class="fa-solid fa-phone"></i> +225 07 00 08 20 80</a>
+                <a href="tel:+2250544101222"><i class="fa-brands fa-whatsapp"></i> +225 05 44 10 12 22</a>
+                <a href="mailto:agriculture@gmail.com"><i class="fa-solid fa-envelope"></i> agriculture@gmail.com</a>
+            </div>
         </div>
-        <div class="log2-foot">
-           <a href="tel:+2250700082080"><i class="fa-solid fa-phone">+2250700082080 </i></a>
-           <a href="tel:+2250544101222"><i class="fa-brands fa-whatsapp">+2250544101222</i></a>
-          <a href="mailto:agriculture@gmail.com"> <i class="fa-solid fa-envelope">agriculture@gmail.com</i></a>
-            
-        </div>
+        <p class="copyright">© agriculture.net</p>
     </footer>
-   <script>
-    alert ("boujour et bienvenue sur ma page web")
-   </script>
+    <script src="script.js"></script>
 </body>
 </html>
